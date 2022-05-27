@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-light">
+        <a href="#" class="navbar-brand">
+            Product App
+        </a>
+    </nav>
+
+    <main class="container">
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add a Product</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" step="0.01" placeholder="Product Price" class="form-control mt-2">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="year" min="1900" value="2022" placeholder="Year Product" class="form-control mt-2">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <input type="submit"  class="btn btn-primary mt-3" value="Save">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="product-list" class="col-md-8">
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
